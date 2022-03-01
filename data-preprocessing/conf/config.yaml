@@ -1,0 +1,4 @@
+target: kddcup-10-percent
+kddcup-10-percent:
+  data_path: '../Dataset/kddcup-10-percent/download-version/kddcup.data_10_percent_corrected'
+  save_path: '../Dataset/kddcup-10-percent/json-version/kddcup-10-percent.json'
