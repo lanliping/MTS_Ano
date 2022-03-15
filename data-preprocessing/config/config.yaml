@@ -1,0 +1,11 @@
+target: server-machine-dataset
+kddcup-10-percent:
+  data_path: '../Dataset/kddcup-10-percent/download-version/kddcup.data_10_percent_corrected'
+  save_path: '../Dataset/kddcup-10-percent/json-version/kddcup-10-percent.json'
+server-machine-dataset:
+  train_path:          '../Dataset/server-machine-dataset/download-version/train'
+  test_path:           '../Dataset/server-machine-dataset/download-version/test'
+  label_path :         '../Dataset/server-machine-dataset/download-version/test_label'
+  interpretation_path: '../Dataset/server-machine-dataset/download-version/interpretation_label'
+  save_train_path:     '../Dataset/server-machine-dataset/json-version/server-machine-dataset.json'
+  save_test_path:      '../Dataset/server-machine-dataset/json-version/server-machine-dataset_test.json'

@@ -1,3 +1,25 @@
+import pathlib
+from utils import *
+
+def write_data(path, data):
+    with open(path, "w") as w:
+        json.dump(data, w)
+
+
+def render_data(path):
+    data_path = path['data_path']
+    save_path = path['save_path']
+    pathlib.Path(save_path).parent.mkdir(parents=True, exist_ok=True)
+    data = get_data(data_path)
+    write_data(save_path, data)
+
+
+def get_data(file):
+    data = read_data(file)
+    data = deal_data(data)
+    return data
+
+
 def read_data(file):
     with open(file, "r") as r:
         data = r.read().splitlines()

@@ -1,0 +1,65 @@
+ECG:
+  dataset: "ECG"
+  data_path: "/home/lidongwen/MTS_Ano/Dataset/ECG/download-version"
+  save_path: "/home/lidongwen/MTS_Ano/Dataset/ECG/json-version/ECG.json"
+
+server-machine-dataset-train:
+  dataset:   "server-machine-dataset-train"
+  data_path: '../Dataset/server-machine-dataset/download-version/train'
+  save_path: '../Dataset/server-machine-dataset/json-version/server-machine-dataset-train.json'
+
+server-machine-dataset-test:
+  dataset: "server-machine-dataset-test"
+  data_path:
+    data_path: "../Dataset/server-machine-dataset/download-version/test"
+    label_path: "../Dataset/server-machine-dataset/download-version/test_label"
+    interpretation_path: "../Dataset/server-machine-dataset/download-version/interpretation_label"
+  save_path: "../Dataset/server-machine-dataset/json-version/server-machine-dataset-test.json"
+
+soil-moisture-active-passive-train:
+  dataset: "soil-moisture-active-passive-train"
+  data_path: "../Dataset/soil-moisture-active-passive/download-version/train"
+  save_path: "../Dataset/soil-moisture-active-passive/json-version/soil-moisture-active-passive-train.json"
+
+soil-moisture-active-passive-test:
+  dataset: "soil-moisture-active-passive-test"
+  data_path:
+    data_path: "../Dataset/soil-moisture-active-passive/download-version/test"
+    label_path: "../Dataset/soil-moisture-active-passive/download-version/labeled_anomalies.csv"
+  save_path: "../Dataset/soil-moisture-active-passive/json-version/soil-moisture-active-passive-test.json"
+
+mars-science-laboratory-train:
+  dataset: "mars-science-laboratory-train"
+  data_path: "../Dataset/mars-science-laboratory/download-version/train"
+  save_path: "../Dataset/mars-science-laboratory/json-version/mars-science-laboratory-train.json"
+
+mars-science-laboratory-test:
+  dataset: "mars-science-laboratory-test"
+  data_path:
+    data_path: "../Dataset/mars-science-laboratory/download-version/test"
+    label_path: "../Dataset/mars-science-laboratory/download-version/labeled_anomalies.csv"
+  save_path: "../Dataset/mars-science-laboratory/json-version/mars-science-laboratory-test.json"
+
+secure-water-treatment-train:
+  dataset: "secure-water-treatment-train"
+  data_path: "../Dataset/secure-water-treatment/download-version/SWaT_Dataset_Normal_v0.xlsx"
+  save_path: "../Dataset/secure-water-treatment/json-version/secure-water-treatment-train.json"
+
+secure-water-treatment-test:
+  dataset: "secure-water-treatment-test"
+  data_path:
+    data_path: "../Dataset/secure-water-treatment/download-version/SWaT_Dataset_Attack_v0.xlsx"
+    inter_path: "../Dataset/secure-water-treatment/download-version/List_of_attacks_Final.xlsx"
+  save_path: "../Dataset/secure-water-treatment/json-version/secure-water-treatment-test.json"
+
+water-distribution-train:
+  dataset: "water-distribution-train"
+  data_path: "../Dataset/water-distribution/download-version/WADI_14days.csv"
+  save_path: "../Dataset/water-distribution/json-version/water-distribution-train.json"
+
+water-distribution-test:
+  dataset: "water-distribution-test"
+  data_path:
+    data_path: "../Dataset/water-distribution/download-version/WADI_attackdata.csv"
+    label_path: "../Dataset/water-distribution/download-version/table_WADI.xlsx"
+  save_path: "../Dataset/water-distribution/json-version/water-distribution-test.json"
