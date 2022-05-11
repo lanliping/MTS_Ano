@@ -1,0 +1,36 @@
+dataset: server-machine-dataset
+
+secure-water-treatment:
+  data: '../data/secure-water-treatment/data/secure-water-treatment-test.json'
+  algorithms:
+    USAD: '../data/secure-water-treatment/result/USAD'
+  save_path: '../visualization-processing/result/secure-water-treatment.json'
+water-distribution:
+  data: '../data/water-distribution/data/water-distribution-test.json'
+  algorithms:
+    USAD: '../data/water-distribution/result/USAD'
+  save_path: '../visualization-processing/result/water-distribution.json'
+server-machine-dataset:
+  data: '../data/server-machine-dataset/data/server-machine-dataset-test.json'
+  algorithms:
+    USAD: '../data/server-machine-dataset/result/USAD'
+    DAGMM: '../data/server-machine-dataset/result/DAGMM'
+  save_path: '../visualization-processing/result/server-machine-dataset.json'
+mars-science-laboratory:
+  data: '../data/mars-science-laboratory/data/mars-science-laboratory-test.json'
+  algorithms:
+    USAD: '../data/mars-science-laboratory/result/USAD'
+    DAGMM: '../data/mars-science-laboratory/result/DAGMM'
+  save_path: '../visualization-processing/result/mars-science-laboratory.json'
+soil-moisture-active-passive:
+  data: '../data/soil-moisture-active-passive/data/soil-moisture-active-passive-test.json'
+  algorithms:
+    USAD: '../data/soil-moisture-active-passive/result/USAD'
+    DAGMM: '../data/soil-moisture-active-passive/result/DAGMM'
+  save_path: '../visualization-processing/result/soil-moisture-active-passive.json'
+application-server-dataset:
+  data: '../data/application-server-dataset/data/application-server-dataset-test.json'
+  algorithms:
+    USAD: '../data/application-server-dataset/result/USAD'
+    DAGMM: '../data/application-server-dataset/result/DAGMM'
+  save_path: '../visualization-processing/result/application-server-dataset.json'
