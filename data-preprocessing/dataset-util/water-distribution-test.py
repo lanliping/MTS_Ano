@@ -98,13 +98,16 @@ def get_label(timestamp, data):
     ret = [[]]
     for tm in timestamp[0]:
         tm = datetime.datetime.strptime(tm, '%Y-%m-%d %H:%M:%S')
+        is_anomaly = False
         for i in data[1:]:
             start = datetime.datetime.strptime(str_insert(i[1], '20', -11), '%d/%m/%Y %H:%M:%S')
             end = datetime.datetime.strptime(str_insert(i[2], '20', -11), '%d/%m/%Y %H:%M:%S')
             if start.__le__(tm) and tm.__le__(end):
+                is_anomaly = True
                 ret[0].append(1)
                 break
-        ret[0].append(0)
+        if not is_anomaly:
+            ret[0].append(0)
     return ret
 
 

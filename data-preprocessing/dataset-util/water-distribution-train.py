@@ -40,11 +40,12 @@ def trans_data(data):
         line_data.pop(50)
         line_data = line_data[3:]
         data_point = []
-        for j in line_data:
+        for j_i, j in enumerate(line_data):
             try:
                 data_point.append(float(j))
             except ValueError:
-                data_point.append(float('nan'))
+                data[i + 5][j_i + 3] = data[i + 4][j_i + 3]
+                data_point.append(float(data[i + 5][j_i + 3]))
         ret_data[0].append(data_point)
     ret_data[0] = np.transpose(ret_data[0]).tolist()
     return ret_data
